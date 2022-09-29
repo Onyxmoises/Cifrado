@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Cifrado</title>
+</head>
+<body>
+    <div class="contaider">
+        <div class="cesar">
+            <h1>Cifrado Cesar</h1>
+            <form>
+                <textarea id="menCesar" cols="30" rows="5" placeholder="Mensaje"></textarea>                    <br>
+                <input id="claveCesar" type="text" placeholder="Cantidad de espacios">
+                <br>
+                <input type="button" value="Cifrar" onclick="cifCesar()">
+                <input type="button" value="Descifrar" onclick="desCesar()">
+                <br>
+                <textarea id="newMenCesar" cols="30" rows="5"></textarea>
+            </form>
+        </div>
+        <div class="viggenere">
+            <h1>Cifrado Viggenere</h1>
+            <form>
+                <textarea cols="30" rows="5" placeholder="Mensaje" id="InputText"></textarea>                    <br>
+                <input type="text" placeholder="Clave" id="PassWord">
+                <br>
+                <input type="button" value="Cifrar" id="Encrypt" onclick="RebuildString(Encriptar(true))">
+                <input type="button" value="Descifrar" id="UnEncrypt" onclick="RebuildString(Encriptar(false))">
+                <br>
+                <textarea cols="30" rows="5" id="Result"></textarea>
+            </form>
+        </div>
+    </div>
+    <script src="/js/cesar.js"></script>
+    <script src="/js/viggenere.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+}
+.cesar{
+    display: grid;
+    background-color: #746ab0;
+    height: 50vh;
+    justify-items: center;
+}
+.viggenere{
+    display: grid;
+    background-color: #288ba8;
+    height: 50vh;
+    justify-items: center;
+}
+input{
+    margin-top: 5px;
+}
+button{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
